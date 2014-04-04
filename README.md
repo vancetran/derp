@@ -1,8 +1,8 @@
 # Derp
-Find the perfect Gif for every moment...
+*A searchable directory of stupid Internet ephemera.*
 
-AKA: A searchable directory of stupid Internet ephemera.
+Mad props to [@mundizzle](http://twitter.com/mundizzle) for getting me started!
 
-Mad props to @mundizzle to getting me started!
+MIT License, I guess?
 
-MIT License, I suppose.
+![image](http://vancetran.com/derp/curb-ehh.gif)
