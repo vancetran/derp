@@ -1,11 +1,10 @@
 var glob = require("glob");
 var fs = require("fs");
 
-glob("images/**/*.gif", function (er, files) {
+glob("app/images/**/*.{gif,jpg,jpeg}", function (er, files) {
     console.log(files);
 
-    fs.writeFile('gifslol.json', JSON.stringify(files, null, 2), function(err) {
-
+    fs.writeFile('app/data/imgslol.json', JSON.stringify(files, null, 2), function(err) {
 
     });
 });

@@ -1,0 +1,29 @@
+{
+  "name": "derp",
+  "version": "0.0.1",
+  "description": "A searchable directory of stupid Internet ephemera.",
+  "main": "index.js",
+  "dependencies": {
+    "glob": "~3.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vancetran/derp.git"
+  },
+  "keywords": [
+    "image",
+    "search",
+    "tags",
+    "gifs"
+  ],
+  "author": "Vance Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vancetran/derp/issues"
+  },
+  "homepage": "https://github.com/vancetran/derp"
+}

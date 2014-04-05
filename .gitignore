@@ -1,7 +1,15 @@
-# Don't be silly and upload jiggabits of Gifs to Github...
+# Don't be silly and upload jigglebits of Gifs to Github...
+app/images/*.gif
+app/images/*.jpg
+app/images/*.jpeg
 
-app/images/*
+# ---------------------------------------------------------
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
 
+
+# ---------------------------------------------------------
 # Mac OS X poop
 .DS_Store
 .AppleDouble
