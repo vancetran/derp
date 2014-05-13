@@ -8,4 +8,3 @@ glob("app/images/**/*.{gif,jpg,jpeg}", function (er, files) {
 
     });
 });
-
