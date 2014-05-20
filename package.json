@@ -4,6 +4,7 @@
   "description": "A searchable directory of stupid Internet ephemera.",
   "main": "index.js",
   "dependencies": {
+    "connect": "^2.16.2",
     "glob": "~3.2.9"
   },
   "devDependencies": {},
