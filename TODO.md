@@ -1,6 +1,6 @@
 # Derp Todo
 
-- [] Pick frontend 
+- [ ] Pick frontend 
     - [ ] Twitter Bootstrap
     - [ ] Zurb Foundation
 - [ ] Backbone + Marrionette?
