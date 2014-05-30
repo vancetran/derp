@@ -1,2 +1,7 @@
-var connect = require('connect');
-connect().use(connect.static(__dirname)).listen(8080);
+var connect = require('connect'),
+    open = require('open'),
+	port = process.argv[2] || 8080;
+
+connect().use(connect.static(__dirname+"/app")).listen(port);
+console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+open('http://localhost:' + port);
