@@ -29,4 +29,5 @@ Licensed under ISC, I guess?
 
 ## Credits and Shoutouts
 
-Mad props to [@mundizzle](http://twitter.com/mundizzle) for getting me started!
+* Mad props to [@mundizzle](http://twitter.com/mundizzle) for getting me started!
+* An Internet thing by [@vancetran](http://twitter.com/vancetran).
