@@ -4,7 +4,7 @@ module.exports = {
 		// you run `grunt bower-install`
 		cwd: './',
 		src: [
-			'dev/includes/footer.php'
+			'<%= appconfig.src %>/index.html'
 		],
 		exclude: ['modernizr','bootstrap'],
 		ignorePath: '<%= appconfig.src %>/'

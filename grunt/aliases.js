@@ -1,11 +1,12 @@
 module.exports = {
 	default: [
-		'clean:dist',
+		'clean:build',
 		'useminPrepare',
 		'concat',
+		'cssmin',
 		'uglify',
 		'imagemin',
-		'less',
+		//'less:build',
 		'copy',
 		'usemin'
 	],

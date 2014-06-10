@@ -1,7 +1,6 @@
-# Don't be silly and upload jigglebits of Gifs to Github...
-app/images/*.gif
-app/images/*.jpg
-app/images/*.jpeg
+# Temp & build files
+.tmp/
+build/
 
 # ---------------------------------------------------------
 # Sublime Text
@@ -30,4 +29,3 @@ Icon
 .AppleDesktop
 Network Trash Folder
 Temporary Items
-

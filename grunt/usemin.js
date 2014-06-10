@@ -3,6 +3,6 @@ module.exports = {
         dirs: ['<%= appconfig.dest %>']
 		//assetsDirs: ['<%= appconfig.dest %>']
 	},
-	html: ['<%= appconfig.dest %>/includes/{,*/}*.php'],
+	html: ['<%= appconfig.dest %>/{,*/}*.html'],
 	css: ['<%= appconfig.dest %>/css/{,*/}*.css']
 };

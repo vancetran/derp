@@ -1,5 +1,5 @@
 module.exports = {
-    html: '<%= appconfig.src %>/includes/footer.php',
+    html: '<%= appconfig.src %>/index.html',
 	options: {
 		dest: '<%= appconfig.dest %>'
 	}
