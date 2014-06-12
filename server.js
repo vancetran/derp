@@ -1,10 +1,14 @@
 var express = require('express'),
   open = require('open'),
-  port = process.argv[3] || 8080,
   serverType = process.argv[2] || 'app';
 
 var app = express();
 
-express().use(express.static(__dirname+'/'+serverType)).listen(port);
-console.log("Static file server running at\n  => http://localhost:" + port + "/\n Pointing to /"+ serverType +" folder.\n CTRL + C to shutdown");
-open('http://localhost:' + port);
+app.set('port', (process.env.PORT || 8080));
+
+app.use(express.static(__dirname+'/'+serverType));
+
+app.listen( app.get('port' ), function() {
+  console.log("Static file server running at\n  => http://localhost:" + app.get('port') + "/\n Pointing to /"+ serverType +" folder.\n CTRL + C to shutdown");
+  open('http://localhost:' + app.get('port'));
+});
