@@ -1,11 +1,11 @@
-var App = App || {};
+var app = app || {};
 
-App.Models.Item = Backbone.Model.extend({
+app.Models.derpItem = Backbone.Model.extend({
   defaults: {
     "id": "default",
     "title": "Title",
     "format": "gif",
-    "url": "images/placeholder.png",
+    "url": "images/ph-doge.jpg",
     "emotion": "funny",
     "keywords": "dog,coin",
     "broken": "false",

@@ -1,4 +1,4 @@
-var App = new (Backbone.View.extend({
+var app = new (Backbone.View.extend({
 
 	Models: {},
 	Views: {},
@@ -7,7 +7,7 @@ var App = new (Backbone.View.extend({
 	start: function(bootstrapData) {
 		Backbone.history.start();
 
-		this.derpItem = new DerpItems(bootstrapData);
+		// this.derpItem = new DerpItems(bootstrapData);
 	},
 
 	render: function(){
@@ -15,4 +15,4 @@ var App = new (Backbone.View.extend({
 
 }))({ el: document.body });
 
-// $(function(){ App.start(bootstrapData); })
+// $(function(){ app.start(bootstrapData); })
