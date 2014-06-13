@@ -9,18 +9,6 @@ app.Models.derpItem = Backbone.Model.extend({
     "keywords": "dog,coin",
     "broken": "false",
     "fallbackurl":"static"
-  },
-
-  initialize: function() {
-    console.log("A model with title " + this.get("title") +  " has been created and it has the imageurl of " + this.get("imageurl"));
-
-    this.on('change', function(){
-      console.log("Something in our model has changed");
-    });
-
-    this.on('change:imageurl', function(){
-      console.log("The imageurl for " + this.get("title") + " model just changed to " + this.get("imageurl"));
-    });
   }
 
 });

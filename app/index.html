@@ -62,7 +62,7 @@
             <input type="text" class="form-control" placeholder="Filter">
           </form>
 
-          <img src="images/ph-doge.jpg">
+          <div id="allDerps"></div>
 
         </div>
       </div>
@@ -73,6 +73,17 @@
         <p>&copy; Derpy 2014</p>
       </footer>
     </div> <!-- /container -->
+
+
+  <script id="derpElement" type="text/template">
+    <a href="#<%= imageurl %>"><img src="<%= imageurl %>" alt="<%= title %>" class="image" /></a>
+    <ul>
+      <li class="derpInfo">Name:<%= title %></li>
+      <li class="derpInfo">Format:<%= format %></li>
+      <li class="derpInfo">Image URL:<%= imageurl %></li>
+    </ul>
+  </script>
+
 
     <!-- build:js(app) js/production.min.js -->
     <!-- bower:js -->
