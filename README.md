@@ -1,6 +1,6 @@
 # Derp
 *A searchable directory of stupid Internet ephemera.*
-
+ 
 ## Summary
 Not much here at the moment, but you can [enjoy the images](http://vancetran.com/derp/) that this project will be based around in the mean time.
 
