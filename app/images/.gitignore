@@ -3,3 +3,5 @@
 *
 # Except this file
 !.gitignore
+!ph-doge.jpg
+!ph-doge-round.png

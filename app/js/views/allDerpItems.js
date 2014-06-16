@@ -5,13 +5,13 @@ app.Views.allDerpItems = Backbone.View.extend({
   tagName: "section",
 
   render: function() {
-    this.collection.each(this.addFlower, this);
+    this.collection.each(this.addDerp, this);
     return this;
   },
 
-  addFlower: function(flower) {
-    var flowerView = new app.singleFlowerView({ model: flower });
-    this.$el.append(flowerView.render().el);
+  addDerp: function(derp) {
+    var derpView = new app.Views.singleDerpItem({ model: derp });
+    this.$el.append(derpView.render().el);
   }
 
 });
