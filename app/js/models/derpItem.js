@@ -8,7 +8,8 @@ app.Models.derpItem = Backbone.Model.extend({
     "emotion": "funny",
     "keywords": "dog,coin",
     "broken": "false",
-    "fallbackurl":"static"
+    "fallbackurl":"static",
+    "link": "#derp"
   }
 
 });

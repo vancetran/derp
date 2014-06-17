@@ -10,5 +10,18 @@ app.Views.singleDerpItem = Backbone.View.extend({
     var derpTemplate = this.template(this.model.toJSON());
     this.$el.html(derpTemplate);
     return this;
+  },
+
+  events: {
+    'mouseover': 'addBgColor',
+    'mouseout': 'removeBgColor'
+  },
+
+  addBgColor: function() {
+    this.$el.addClass("bgColorImage");
+  },
+
+  removeBgColor: function() {
+    this.$el.removeClass("bgColorImage");
   }
 });

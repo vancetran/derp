@@ -1,13 +1,16 @@
 var doge2 = new app.Models.derpItem({
   title: "That Doge",
-  imageurl: "images/ph-doge-round.png"
+  imageurl: "images/ph-doge-round.png",
+  link: "thatdog"
 });
 var hello = new app.Models.derpItem({
-  title: "Yojimbo"
+  title: "Yojimbo",
+  link: "yojimbo"
 });
 var falafel = new app.Models.derpItem({
   title: "Falafel dog",
-  imageurl: "images/ph-doge-round.png"
+  imageurl: "images/ph-doge-round.png",
+  link: "falafeldog"
 });
 
 var dogGroup = new app.Collections.allDerps([
@@ -23,7 +26,8 @@ $("#allDerps").html(dogGroupView.render().el);
 
 console.log(dogGroup.toJSON());
 
-
+var derpRouter = new app.Router();
+Backbone.history.start();
 /*
 var app = new (Backbone.View.extend({
 
