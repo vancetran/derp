@@ -5606,7 +5606,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+#listView:before,
+#listView:after {
   content: " ";
   display: table;
 }
@@ -5623,7 +5625,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+#listView:after {
   clear: both;
 }
 .center-block {
@@ -5774,9 +5777,33 @@ button.close {
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
   padding-bottom: 20px;
 }
 .bgColorImage {
   background-color: orange;
+}
+#listView {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.itemContainer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .itemContainer {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .itemContainer {
+    float: left;
+    width: 50%;
+  }
+}
+.itemContainer img {
+  width: 100%;
 }

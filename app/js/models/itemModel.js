@@ -1,16 +1,16 @@
 var app = app || {};
 
-app.itemModel = Backbone.Model.extend({
+app.ItemModel = Backbone.Model.extend({
   defaults: {
-    "title": "Title",
-    "format": "gif",
-    "imageUrl": "images/ph-doge.jpg",
-    "emotion": "funny",
-    "keywords": "dog,coin",
-    "isBroken": "false",
-    "fallbackUrl":"static",
-    "link": "#derp",
-    "dateAdded": "1/1/1970"
+    "title":"default",
+    "format":"default",
+    "imageUrl":"default",
+    "emotion":"default",
+    "keywords":"default",
+    "isBroken":"FALSE",
+    "fallbackUrl":"default",
+    "dateAdded":"1/1/1970",
+    "link": "#derp"
   }
 
 });

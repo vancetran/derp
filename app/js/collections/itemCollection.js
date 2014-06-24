@@ -1,5 +1,6 @@
 var app = app || {};
 
-app.itemCollection = Backbone.Collection.extend({
-  model: app.itemModel
+app.ItemCollection = Backbone.Collection.extend({
+  model: app.ItemModel,
+  // url: '/api/items'
 });
