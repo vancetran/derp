@@ -5786,6 +5786,12 @@ body {
   margin-left: -15px;
   margin-right: -15px;
 }
+#listView .table td {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .itemContainer {
   position: relative;
   min-height: 1px;

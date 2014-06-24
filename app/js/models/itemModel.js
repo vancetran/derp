@@ -10,7 +10,7 @@ app.ItemModel = Backbone.Model.extend({
     "isBroken":"FALSE",
     "fallbackUrl":"default",
     "dateAdded":"1/1/1970",
-    "link": "#derp"
+    "link": "derp"
   }
 
 });

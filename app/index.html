@@ -24,23 +24,23 @@
   <body>
     <div class="container">
       <div class="row">
-
+        <div class="col-md-12">
           <h1>Derp</h1>
           <p>A searchable directory of stupid Internet ephemera.</p>
-
+        </div>
       </div>
 
-
+      <div class="row">
+        <div class="col-md-12">
           <h2>List View</h2>
 
-          <form role="form">
-            <input type="text" class="form-control" placeholder="Filter">
-          </form>
+        </div>
+      </div>
 
-          <div id="listView">
+      <div id="listView">
 
 
-          </div>
+      </div>
 
 
 
@@ -55,12 +55,46 @@
 
 
   <script id="itemTemplate" type="text/template">
-    <a href="#<%= link %>"><img src="<%= imageUrl %>" alt="<%= title %>" class="image" /></a>
-    <ul>
-      <li>Name:<%= title %></li>
-      <li>Format:<%= format %></li>
-      <li>Image URL:<%= imageUrl %></li>
-    </ul>
+
+    <h3><%= title %></h3>
+    <a href="<%= imageUrl %>"><img src="<%= imageUrl %>" alt="<%= title %>" class="image" /></a>
+
+
+
+    <table class="table">
+      <tr>
+        <td>title</td>
+        <td><%= title %></td>
+      </tr>
+      <tr>
+        <td>format</td>
+        <td><%= format %></td>
+      </tr>
+      <tr>
+        <td>imageUrl</td>
+        <td><%= imageUrl %></td>
+      </tr>
+      <tr>
+        <td>emotion</td>
+        <td><%= emotion %></td>
+      </tr>
+      <tr>
+        <td>keywords</td>
+        <td><%= keywords %></td>
+      </tr>
+      <tr>
+        <td>isBroken</td>
+        <td><%= isBroken %></td>
+      </tr>
+      <tr>
+        <td>fallbackUrl</td>
+        <td><%= fallbackUrl %></td>
+      </tr>
+      <tr>
+        <td>dateAdded</td>
+        <td><%= dateAdded %></td>
+      </tr>
+    </table>
   </script>
 
 

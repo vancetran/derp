@@ -11,7 +11,7 @@ app.ListView = Backbone.View.extend({
     this.render();
     
     this.listenTo( this.collection, 'add', this.renderItem );
-    this.listenTo( this.collection, 'reset', this.render );
+    // this.listenTo( this.collection, 'reset', this.render );
   },
 
   // render library by rendering each item in its collection
