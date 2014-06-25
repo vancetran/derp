@@ -5798,16 +5798,22 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
-  .itemContainer {
-    float: left;
-    width: 33.33333333333333%;
-  }
-}
 @media (min-width: 768px) {
   .itemContainer {
     float: left;
     width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .itemContainer {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .itemContainer {
+    float: left;
+    width: 25%;
   }
 }
 .itemContainer img {
