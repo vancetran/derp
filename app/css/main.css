@@ -5607,8 +5607,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-#listView:before,
-#listView:after {
+#list-view:before,
+#list-view:after {
   content: " ";
   display: table;
 }
@@ -5626,7 +5626,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-#listView:after {
+#list-view:after {
   clear: both;
 }
 .center-block {
@@ -5782,11 +5782,11 @@ body {
 .bgColorImage {
   background-color: orange;
 }
-#listView {
+#list-view {
   margin-left: -15px;
   margin-right: -15px;
 }
-#listView .table td {
+#list-view .table td {
   max-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
