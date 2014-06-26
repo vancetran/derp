@@ -1,6 +1,49 @@
 var app = app || {};
 
 $(function() {
+    var sampleCollection = [
+    {
+      "title":"Doge",
+      "format":"jpg",
+      "imageUrl":"images/ph-doge.jpg",
+      "emotion":"wow",
+      "keywords":"doge, coin, wow, such",
+      "isBroken":"FALSE",
+      "fallbackUrl":"",
+      "dateAdded":"6/26/2014"
+    },
+    {
+      "title":"Lego San Francisco",
+      "format":"jpg",
+      "imageUrl":"http://i.imgur.com/v4eDp77.jpg",
+      "emotion":"intricate",
+      "keywords":"lego, sf, san francisco",
+      "isBroken":"FALSE",
+      "fallbackUrl":"",
+      "dateAdded":"6/3/2014"
+    },
+    {
+      "title":"Doge",
+      "format":"jpg",
+      "imageUrl":"images/ph-doge.jpg",
+      "emotion":"wow",
+      "keywords":"doge, coin, wow, such",
+      "isBroken":"FALSE",
+      "fallbackUrl":"",
+      "dateAdded":"6/26/2014"
+    },
+    {
+      "title":"Lego San Francisco",
+      "format":"jpg",
+      "imageUrl":"http://i.imgur.com/v4eDp77.jpg",
+      "emotion":"intricate",
+      "keywords":"lego, sf, san francisco",
+      "isBroken":"FALSE",
+      "fallbackUrl":"",
+      "dateAdded":"6/3/2014"
+    }
+    ];
+
     var itemCollection = [
     
     {
@@ -24,26 +67,6 @@ $(function() {
       "dateAdded":"6/3/2014"
     },
     {
-      "title":"Doge",
-      "format":"jpg",
-      "imageUrl":"images/ph-doge.jpg",
-      "emotion":"wow",
-      "keywords":"doge, coin, wow, such",
-      "isBroken":"FALSE",
-      "fallbackUrl":"",
-      "dateAdded":"6/26/2014"
-    },
-    {
-      "title":"Lego San Francisco",
-      "format":"jpg",
-      "imageUrl":"http://i.imgur.com/v4eDp77.jpg",
-      "emotion":"intricate",
-      "keywords":"lego, sf, san francisco",
-      "isBroken":"FALSE",
-      "fallbackUrl":"",
-      "dateAdded":"6/3/2014"
-    },
-    /*{
       "title":"Cubes",
       "format":"gif",
       "imageUrl":"http://i.imgur.com/9BHjHmm.gif",
@@ -302,7 +325,7 @@ $(function() {
       "isBroken":"FALSE",
       "fallbackUrl":"",
       "dateAdded":"6/24/2014"
-    }*/];
+    }];
 
-    new app.ListView( itemCollection );
+    new app.ListView( sampleCollection );
 });
