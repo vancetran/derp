@@ -5607,8 +5607,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-#list-view:before,
-#list-view:after {
+#grid-view:before,
+#grid-view:after {
   content: " ";
   display: table;
 }
@@ -5626,7 +5626,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-#list-view:after {
+#grid-view:after {
   clear: both;
 }
 .center-block {
@@ -5782,11 +5782,11 @@ body {
 .bgColorImage {
   background-color: orange;
 }
-#list-view {
+#grid-view {
   margin-left: -15px;
   margin-right: -15px;
 }
-#list-view .table td {
+#grid-view .table td {
   max-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5807,13 +5807,13 @@ body {
 @media (min-width: 992px) {
   .itemContainer {
     float: left;
-    width: 25%;
+    width: 33.33333333333333%;
   }
 }
 @media (min-width: 1200px) {
   .itemContainer {
     float: left;
-    width: 33.33333333333333%;
+    width: 25%;
   }
 }
 .itemContainer img {
