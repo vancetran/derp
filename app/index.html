@@ -54,49 +54,48 @@
 
 
 
-  <script id="itemTemplate" type="text/template">
+    <script id="itemTemplate" type="text/template">
 
-    <h3><%= title %></h3>
-    <a href="<%= imageUrl %>"><img src="<%= imageUrl %>" alt="<%= title %>" class="image" /></a>
+      <h3><%= title %></h3>
+      <a href="<%= imageUrl %>"><img src="<%= imageUrl %>" alt="<%= title %>" class="image" /></a>
 
+      <button type="button" class="btn btn-default item-detail-button btn-sm">Toggle Details</button>
 
-
-    <table class="table">
-      <tr>
-        <td>title</td>
-        <td><%= title %></td>
-      </tr>
-      <tr>
-        <td>format</td>
-        <td><%= format %></td>
-      </tr>
-      <tr>
-        <td>imageUrl</td>
-        <td><%= imageUrl %></td>
-      </tr>
-      <tr>
-        <td>emotion</td>
-        <td><%= emotion %></td>
-      </tr>
-      <tr>
-        <td>keywords</td>
-        <td><%= keywords %></td>
-      </tr>
-      <tr>
-        <td>isBroken</td>
-        <td><%= isBroken %></td>
-      </tr>
-      <tr>
-        <td>fallbackUrl</td>
-        <td><%= fallbackUrl %></td>
-      </tr>
-      <tr>
-        <td>dateAdded</td>
-        <td><%= dateAdded %></td>
-      </tr>
-    </table>
-  </script>
-
+      <table class="item-detail table">
+        <tr>
+          <td>title</td>
+          <td><%= title %></td>
+        </tr>
+        <tr>
+          <td>format</td>
+          <td><%= format %></td>
+        </tr>
+        <tr>
+          <td>imageUrl</td>
+          <td><%= imageUrl %></td>
+        </tr>
+        <tr>
+          <td>emotion</td>
+          <td><%= emotion %></td>
+        </tr>
+        <tr>
+          <td>keywords</td>
+          <td><%= keywords %></td>
+        </tr>
+        <tr>
+          <td>isBroken</td>
+          <td><%= isBroken %></td>
+        </tr>
+        <tr>
+          <td>fallbackUrl</td>
+          <td><%= fallbackUrl %></td>
+        </tr>
+        <tr>
+          <td>dateAdded</td>
+          <td><%= dateAdded %></td>
+        </tr>
+      </table>
+    </script>
 
     <!-- build:js(app) js/production.min.js -->
     <!-- bower:js -->
@@ -105,6 +104,9 @@
     <script src="bower_components/backbone/backbone.js"></script>
     <!-- endbower -->
 
+
+
+
     <script src="js/models/itemModel.js"></script>    
     <script src="js/collections/itemCollection.js"></script>
     <script src="js/views/itemView.js"></script>
@@ -112,5 +114,15 @@
     <script src="js/routes/routes.js"></script>    
     <script src="js/app.js"></script>
     <!-- endbuild -->
+
+
+    <script>
+      $( document ).ready(function() {
+        $( ".item-detail-button" ).click(function() {
+          $( ".item-detail" ).toggle();
+        });
+      });      
+    </script>
+
   </body>
 </html>

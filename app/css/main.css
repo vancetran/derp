@@ -5819,3 +5819,6 @@ body {
 .itemContainer img {
   width: 100%;
 }
+.item-detail {
+  display: none;
+}
