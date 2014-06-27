@@ -5,7 +5,6 @@ app.ItemModel = Backbone.Model.extend({
     "title":"default",
     "format":"default",
     "imageUrl":"default",
-    "emotion":"default",
     "keywords":"default",
     "isBroken":"FALSE",
     "fallbackUrl":"default",
