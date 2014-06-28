@@ -1,9 +1,9 @@
 var app = app || {};
 
 
-app.ListView = Backbone.View.extend({
+app.GridView = Backbone.View.extend({
 
-  el: '#list-view',
+  el: '#grid-view',
 
   initialize: function( initialItems ) {
     this.collection = new app.ItemCollection( initialItems );
