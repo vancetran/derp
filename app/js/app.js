@@ -327,5 +327,5 @@ $(function() {
       "dateAdded":"6/24/2014"
     }];
 
-    new app.ListView( sampleCollection );
+    new app.ListView( itemCollection );
 });
