@@ -42,6 +42,18 @@
 
       </div>
 
+      <div class="row">
+        <div class="col-md-12">
+          <h2>List View</h2>
+
+        </div>
+      </div>
+
+      <ul id="list-view">
+
+
+      </ul>
+
 
 
       <hr>
@@ -58,6 +70,45 @@
 
       <h3><%= title %></h3>
       <a href="<%= imageUrl %>"><img src="<%= imageUrl %>" alt="<%= title %>" class="image" /></a>
+
+      <button type="button" class="btn btn-default item-detail-button btn-sm">Toggle Details</button>
+
+      <table class="item-detail table">
+        <tr>
+          <td>title</td>
+          <td><%= title %></td>
+        </tr>
+        <tr>
+          <td>format</td>
+          <td><%= format %></td>
+        </tr>
+        <tr>
+          <td>imageUrl</td>
+          <td><%= imageUrl %></td>
+        </tr>
+        <tr>
+          <td>keywords</td>
+          <td><%= keywords %></td>
+        </tr>
+        <tr>
+          <td>isBroken</td>
+          <td><%= isBroken %></td>
+        </tr>
+        <tr>
+          <td>fallbackUrl</td>
+          <td><%= fallbackUrl %></td>
+        </tr>
+        <tr>
+          <td>dateAdded</td>
+          <td><%= dateAdded %></td>
+        </tr>
+      </table>
+    </script>
+
+    <script id="itemListTemplate" type="text/template">
+
+      <h3><%= title %></h3>
+      <a href="<%= imageUrl %>"><%= title %></a>
 
       <button type="button" class="btn btn-default item-detail-button btn-sm">Toggle Details</button>
 
@@ -115,6 +166,8 @@
 
     <script src="js/models/itemModel.js"></script>    
     <script src="js/collections/itemCollection.js"></script>
+    <script src="js/views/itemListView.js"></script>
+    <script src="js/views/listView.js"></script>
     <script src="js/views/itemView.js"></script>
     <script src="js/views/gridView.js"></script>
     <script src="js/routes/routes.js"></script>    

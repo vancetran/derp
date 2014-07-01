@@ -21,13 +21,13 @@ app.ListView = Backbone.View.extend({
     }, this );
   },
 
-  // render a item by creating a ItemView and appending the
+  // render a item by creating a ItemListView and appending the
   // element it renders to the library's element
   renderItem: function( item ) {
-    var itemView = new app.ItemView({
+    var itemListView = new app.ItemListView({
       model: item
     });
-    this.$el.append( itemView.render().el );
+    this.$el.append( itemListView.render().el );
   },
 
   events:{
