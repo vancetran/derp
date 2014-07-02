@@ -1,6 +1,6 @@
 var app = app || {};
 
 $(function() { 
-    new app.GridView( gifJpgColl );
-    new app.ListView( gifJpgColl );
+    new app.GridView( sampleColl );
+    new app.ListView( sampleColl );
 });
