@@ -2,11 +2,12 @@ var app = app || {};
 
 var Workspace = Backbone.Router.extend({
   routes:{
-    '*filter': 'setFilter'
+    'list': 'listView'
   },
 
-  setFilter: function( param ) {
+  setView: function( param ) {
     console.log(param);
+
     /*
     // Set the current filter to be used
     if (param) {
@@ -18,8 +19,17 @@ var Workspace = Backbone.Router.extend({
     // of Todo view items
     app.Todos.trigger('filter');
     */
-  }
+  },
+
+  listView: function() {
+    console.log("hello");
+
+    // $('#app').html(this.ListView.render().el);
+  },
+
 });
 
 app.TodoRouter = new Workspace();
-Backbone.history.start();
+$(function() {
+  Backbone.history.start();
+});
