@@ -16,6 +16,7 @@ app.GridView = Backbone.View.extend({
 
   // render library by rendering each item in its collection
   render: function() {
+    console.log("Hello");
     this.collection.each(function( item ) {
       this.renderItem( item );
     }, this );
@@ -24,7 +25,6 @@ app.GridView = Backbone.View.extend({
   // render a item by creating a ItemView and appending the
   // element it renders to the library's element
   renderItem: function( item ) {
-    console.log("Hello");
     var itemView = new app.ItemView({
       model: item
     });
