@@ -24,7 +24,7 @@ var Workspace = Backbone.Router.extend({
   listView: function() {
     console.log("hello");
 
-    // $('#app').html(this.ListView.render().el);
+    $('#app').html(app.ListView.render().el);
   },
 
 });
