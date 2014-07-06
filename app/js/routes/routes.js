@@ -2,12 +2,12 @@ var app = app || {};
 
 var Workspace = Backbone.Router.extend({
   routes:{
-    //'list': 'listView',
+    'list': 'listView',
     //'grid': 'gridView'
   },
 
   initialize: function(){
-    //this.listView = new app.ListView( sampleColl );
+    this.listView = new app.ListView( sampleColl );
   },
 
 
@@ -29,8 +29,6 @@ var Workspace = Backbone.Router.extend({
 
   listView: function() {
     console.log("list view");
-
-    new app.ListView( sampleColl );
 
     $('#app').html(this.listView.render());
   },

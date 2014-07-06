@@ -3,12 +3,12 @@ var app = app || {};
 
 app.ListView = Backbone.View.extend({
 
-  el: '#list-view',
+  el: '#app',
 
   initialize: function( initialItems ) {
     this.collection = new app.ItemCollection( initialItems );
     // this.collection.fetch({reset: true});
-    this.render();
+    // this.render();
     
     this.listenTo( this.collection, 'add', this.renderItem );
     // this.listenTo( this.collection, 'reset', this.render );
