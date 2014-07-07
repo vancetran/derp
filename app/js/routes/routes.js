@@ -2,6 +2,7 @@ var app = app || {};
 
 var Workspace = Backbone.Router.extend({
   routes:{
+    '': 'home',
     'list': 'listView',
     //'grid': 'gridView'
   },
@@ -27,8 +28,14 @@ var Workspace = Backbone.Router.extend({
     */
   },
 
+  home: function () {
+    console.log("home nav clicked");
+
+    $('#app').html("Welcome home.");
+  },
+
   listView: function() {
-    console.log("list view");
+    console.log("list nav clicked");
 
     $('#app').html(this.listView.render());
   },
