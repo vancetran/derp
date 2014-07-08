@@ -9,6 +9,7 @@ var Workspace = Backbone.Router.extend({
 
   initialize: function(){
     this.listView = new app.ListView( sampleColl );
+    this.gridView = new app.GridView( sampleColl );
   },
 
 
@@ -36,14 +37,15 @@ var Workspace = Backbone.Router.extend({
 
   listView: function() {
     console.log("list view activated");
-
+    $('#app').html("");
     $('#app').html(this.listView.render());
   },
 
   gridView: function() {
     console.log("grid view activated");
 
-    $('#app').html("welcome, le grid");
+    $('#app').html("");
+    $('#app').html(this.gridView.render());
     // $('#app').html(this.ListView.render().el);
   }
 
