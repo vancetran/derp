@@ -4,7 +4,7 @@ var Workspace = Backbone.Router.extend({
   routes:{
     '': 'home',
     'list': 'listView',
-    //'grid': 'gridView'
+    'grid': 'gridView'
   },
 
   initialize: function(){
@@ -29,21 +29,21 @@ var Workspace = Backbone.Router.extend({
   },
 
   home: function () {
-    console.log("home nav clicked");
+    console.log("home view activated");
 
     $('#app').html("Welcome home.");
   },
 
   listView: function() {
-    console.log("list nav clicked");
+    console.log("list view activated");
 
     $('#app').html(this.listView.render());
   },
 
   gridView: function() {
-    console.log("grid view");
+    console.log("grid view activated");
 
-    $('#app').html("blank");
+    $('#app').html("welcome, le grid");
     // $('#app').html(this.ListView.render().el);
   }
 
