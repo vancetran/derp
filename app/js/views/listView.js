@@ -32,41 +32,7 @@ app.ListView = Backbone.View.extend({
   },
 
   events:{
-    'click #add':'addItem'
-  },
-
-  addItem: function( e ) {
-    e.preventDefault();
-
-    var formData = {};
-
-    $( '#addItem div' ).children( 'input' ).each( function( i, el ) {
-
-      // Trying to get the file upload to work...
-      //
-      // if( $(el).get(0).form.id === "coverImage" ){
-      //   // console.log("bingo");
-      //   // formData[ el.id ] = "images/".$( el ).val();
-      // }
-
-      if( $( el ).val() != '' )
-      {
-        if( el.id === 'keywords' ) {
-          formData[ el.id ] = [];
-          _.each( $( el ).val().split( ' ' ), function( keyword ) {
-            formData[ el.id ].push({ 'keyword': keyword });
-          });
-        } else if( el.id === 'releaseDate' ) {
-          formData[ el.id ] = $( '#releaseDate' ).datepicker( 'getDate' ).getTime();
-        } else {
-          formData[ el.id ] = $( el ).val();
-        }
-      }
-      // Clear input field value
-      $( el ).val('');
-    });
-
-    this.collection.create( formData );
+    //'click #add':'addItem'
   }
 
 
