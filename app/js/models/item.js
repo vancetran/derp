@@ -1,6 +1,6 @@
 var app = app || {};
 
-app.ItemModel = Backbone.Model.extend({
+app.Item = Backbone.Model.extend({
   defaults: {
     "title":"default",
     "format":"default",

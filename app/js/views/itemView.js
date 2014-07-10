@@ -1,12 +1,11 @@
 var app = app || {};
 
 app.ItemView = Backbone.View.extend({
-  tagName: 'div',
-  className: 'itemContainer',
-  template: _.template( $( '#itemTemplate' ).html() ),
+  tagName: 'li',
+  className: 'itemContainer2',
+  template: _.template( $( '#list-template-simple' ).html() ),
 
   render: function() {
-    //this.el is what we defined in tagName. use $el to get access to jQuery html() function
     this.$el.html( this.template( this.model.toJSON() ) );
 
     return this;
@@ -21,6 +20,6 @@ app.ItemView = Backbone.View.extend({
     this.model.destroy();
     //Delete view
     this.remove();
-  },
+  }
   
 });

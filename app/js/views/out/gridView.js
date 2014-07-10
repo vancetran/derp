@@ -6,7 +6,7 @@ app.GridView = Backbone.View.extend({
   el: '#app',
 
   initialize: function( initialItems ) {
-    this.collection = new app.ItemCollection( initialItems );
+    this.collection = new app.List( initialItems );
     // this.collection.fetch({reset: true});
     // this.render();
     

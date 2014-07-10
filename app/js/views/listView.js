@@ -1,35 +1,42 @@
 var app = app || {};
 
-
 app.ListView = Backbone.View.extend({
 
   el: '#app',
 
   initialize: function( initialItems ) {
-    this.collection = new app.ItemCollection( initialItems );
+    _.bindAll(this, 'render','appendItem'); // every function that uses 'this' as the current object should be in here
+    this.collection = new app.List( initialItems );
     // this.collection.fetch({reset: true});
     // this.render();
     
     this.listenTo( this.collection, 'add', this.renderItem );
     // this.listenTo( this.collection, 'reset', this.render );
+    this.render();
   },
 
-  // render library by rendering each item in its collection
   render: function() {
-    console.log("Hello");
+    $(this.el).append("<ul></ul>");
     this.collection.each(function( item ) {
-      this.renderItem( item );
+      this.appendItem( item );
     }, this );
   },
 
-  // render a item by creating a ItemListView and appending the
-  // element it renders to the library's element
+  appendItem: function(item){
+    var itemView = new app.ItemView({
+      model: item
+    });
+    $('ul', this.el).append(itemView.render().el);
+  },
+
+  /*
   renderItem: function( item ) {
-    var itemListView = new app.ItemListView({
+    var itemListView = new app.ItemView({
       model: item
     });
     this.$el.append( itemListView.render().el );
   },
+  */
 
   events:{
     //'click #add':'addItem'

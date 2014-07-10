@@ -1,9 +1,9 @@
 var app = app || {};
 
-app.ItemListView = Backbone.View.extend({
-  tagName: 'li',
-  className: 'itemContainer2',
-  template: _.template( $( '#itemListTemplate' ).html() ),
+app.ItemView = Backbone.View.extend({
+  tagName: 'div',
+  className: 'itemContainer',
+  template: _.template( $( '#itemTemplate' ).html() ),
 
   render: function() {
     //this.el is what we defined in tagName. use $el to get access to jQuery html() function
