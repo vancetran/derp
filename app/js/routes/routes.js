@@ -8,6 +8,7 @@ var Workspace = Backbone.Router.extend({
   },
 
   initialize: function(){
+
     this.listView = new app.ListView( sampleColl );
     this.gridView = new app.GridView( sampleColl );
   },

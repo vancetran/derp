@@ -8,7 +8,7 @@ $( document ).ready(function() {
   );
 
   // Masonry
-  var $msnryContainer = $('#app .grid');
+  var $msnryContainer = $('#app');
 
   imagesLoaded( $msnryContainer, function() {
     $msnryContainer.masonry();
