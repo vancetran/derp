@@ -1,6 +1,6 @@
 var app = app || {};
 
-app.ItemView = Backbone.View.extend({
+app.ItemGridView = Backbone.View.extend({
   tagName: 'div',
   className: 'itemContainer',
   template: _.template( $( '#itemTemplate' ).html() ),

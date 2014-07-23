@@ -1,6 +1,10 @@
 var app = app || {};
 
-$(function() { 
-    // new app.GridView( sampleColl );
-    // new app.ListView( sampleColl );
+$(function() {
+	
+	app.router = new Router();
+	$(function() {
+		Backbone.history.start();
+	});
+
 });

@@ -1,33 +1,13 @@
 var app = app || {};
 
-var Workspace = Backbone.Router.extend({
+var Router = Backbone.Router.extend({
   routes:{
     '': 'listView',
-    //'list': 'listView',
-    //'grid': 'gridView'
+    'grid': 'gridView'
   },
-
-  initialize: function(){
-
-    this.listView = new app.ListView( sampleColl );
-    // this.gridView = new app.GridView( sampleColl );
-  },
-
 
   setView: function( param ) {
     console.log(param);
-
-    /*
-    // Set the current filter to be used
-    if (param) {
-      param = param.trim();
-    }
-    app.TodoFilter = param || '';
-
-    // Trigger a collection filter event, causing hiding/unhiding
-    // of Todo view items
-    app.Todos.trigger('filter');
-    */
   },
 
   home: function () {
@@ -36,23 +16,21 @@ var Workspace = Backbone.Router.extend({
     $('#app').html("Welcome home.");
   },
 
-  listView: function() {
+  listView : function() {
     console.log("list view activated");
     $('#app').html("");
-    $('#app').html(this.listView.render());
+    this.view = new app.ListView( sampleColl );
   },
 
   gridView: function() {
     console.log("grid view activated");
-
     $('#app').html("");
-    $('#app').html(this.gridView.render());
-    // $('#app').html(this.ListView.render().el);
+    this.view = new app.GridView( sampleColl );
+  },
+
+  loadView : function(view) {
+    this.view && (this.view.close ? this.view.close() : this.view.remove());
+    this.view = view;
   }
 
-});
-
-app.TodoRouter = new Workspace();
-$(function() {
-  Backbone.history.start();
 });
