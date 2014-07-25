@@ -3,7 +3,11 @@ var app = app || {};
 var Router = Backbone.Router.extend({
   routes:{
     '': 'listView',
-    'grid': 'gridView'
+    // 'grid': 'gridView'
+  },
+
+  initialize: function() {
+    this.listView = new app.ListView( sampleColl );
   },
 
   setView: function( param ) {
@@ -18,8 +22,9 @@ var Router = Backbone.Router.extend({
 
   listView : function() {
     console.log("list view activated");
-    $('#app').html("");
-    this.view = new app.ListView( sampleColl );
+    $('#app').html(this.listView.render().el);
+    //$('#app').html("");
+    //this.view = new app.ListView( sampleColl );
   },
 
   gridView: function() {
