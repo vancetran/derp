@@ -7,9 +7,10 @@ var Router = Backbone.Router.extend({
   },
 
   initialize: function() {
-    // this.list = new app.List();
-    this.listView = new app.ListView( sampleColl );
-    this.gridView = new app.GridView( sampleColl );
+    this.fullList = new app.List(sampleColl);
+
+    this.listView = new app.ListView( {collection: this.fullList} );
+    this.gridView = new app.GridView( {collection: this.fullList} );
 
   },
 
