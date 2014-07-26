@@ -1,46 +1,46 @@
 var app = app || {};
 
 var Router = Backbone.Router.extend({
-  routes:{
-    '': 'listView',
-    'grid': 'gridView'
-  },
+	routes:{
+		'': 'listView',
+		'grid': 'gridView'
+	},
 
-  initialize: function() {
-    this.fullList = new app.List(sampleColl);
+	initialize: function() {
+		this.fullList = new app.List(sampleColl);
 
-    this.listView = new app.ListView( {collection: this.fullList} );
-    this.gridView = new app.GridView( {collection: this.fullList} );
+		this.listView = new app.ListView( {collection: this.fullList} );
+		this.gridView = new app.GridView( {collection: this.fullList} );
 
-  },
+	},
 
-  setView: function( param ) {
-    console.log(param);
-  },
+	setView: function( param ) {
+		console.log(param);
+	},
 
-  home: function () {
-    console.log("home view activated");
+	home: function () {
+		console.log("home view activated");
 
-    $('#app').html("Welcome home.");
-  },
+		$('#app').html("Welcome home.");
+	},
 
-  listView : function() {
-    console.log("list view activated");
-    $('#app').html(this.listView.render().el);
-    //$('#app').html("");
-    //this.view = new app.ListView( sampleColl );
-  },
+	listView : function() {
+		console.log("list view activated");
+		$('#app').html(this.listView.render().el);
+		//$('#app').html("");
+		//this.view = new app.ListView( sampleColl );
+	},
 
-  gridView: function() {
-    console.log("grid view activated");
-    $('#app').html(this.gridView.render().el);
-    // $('#app').html("");
-    // this.view = new app.GridView( sampleColl );
-  },
+	gridView: function() {
+		console.log("grid view activated");
+		$('#app').html(this.gridView.render().el);
+		// $('#app').html("");
+		// this.view = new app.GridView( sampleColl );
+	},
 
-  loadView : function(view) {
-    this.view && (this.view.close ? this.view.close() : this.view.remove());
-    this.view = view;
-  }
+	loadView : function(view) {
+		this.view && (this.view.close ? this.view.close() : this.view.remove());
+		this.view = view;
+	}
 
 });
