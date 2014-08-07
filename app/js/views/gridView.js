@@ -2,7 +2,7 @@ var app = app || {};
 
 app.GridView = Backbone.View.extend({
 
-	className: "grid",
+	className: "grid row",
 	initialize: function( initialItems ) {
 		// this.collection = new app.List( initialItems );
 		// this.collection.fetch({reset: true});    
