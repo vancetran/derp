@@ -1,6 +1,5 @@
 var app = app || {};
 
-
 app.GridView = Backbone.View.extend({
 
 	initialize: function( initialItems ) {
