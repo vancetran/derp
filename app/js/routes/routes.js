@@ -27,15 +27,13 @@ var Router = Backbone.Router.extend({
 	listView : function() {
 		console.log("list view activated");
 		$('#app').html(this.listView.render().el);
-		//$('#app').html("");
-		//this.view = new app.ListView( sampleColl );
+		app.doMasonry();
 	},
 
 	gridView: function() {
 		console.log("grid view activated");
 		$('#app').html(this.gridView.render().el);
-		// $('#app').html("");
-		// this.view = new app.GridView( sampleColl );
+		app.doMasonry();
 	},
 
 	loadView : function(view) {

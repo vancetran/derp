@@ -7,10 +7,13 @@ $( document ).ready(function() {
 		}
 	);
 
-	// Masonry
-	var $msnryContainer = $('#app .grid');
+	app.doMasonry();
+});
+
+app.doMasonry = function(){
+	var $msnryContainer = $('.grid');
 
 	imagesLoaded( $msnryContainer, function() {
 		$msnryContainer.masonry();
 	});
-});
+}
